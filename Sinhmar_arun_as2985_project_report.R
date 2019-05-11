@@ -176,6 +176,13 @@ DTM_bjp = DTM_bjp[-1,]
 DTM_papu = DTM_papu[-1,]
 DTM_congress = DTM_congress[-1,]
 
+# Exporting word_frequency databases
+write.csv(DTM_namo, "modi_wordfrequency.csv")
+write.csv(DTM_bjp, "bjp_wordfrequency.csv")
+write.csv(DTM_papu, "gandhi_wordfrequency.csv")
+write.csv(DTM_congress, "congress_wordfrequency.csv")
+
+
 # Here, I am plotting barplots and wordclouds of the processed final set of words
 # Barplots and Wordcloud can help us understand which words are most frequenctly associated with different parties 
 # and Prime Miniter candidates
